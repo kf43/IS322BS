@@ -1,34 +1,70 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-      <meta charset="utf-8">
-          <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	      <meta name="viewport" content="width=device-width, initial-scale=1">
-	          <title>Bootstrap 101 Template</title>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Hammerjs HW2</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1
+	user-scalable=no">
+	<!-- <script scr="js/jquery-1.7.2.min.js"></script>
+	<script src="js/hammer.js"></script>
+	<script src="js/jquery.hammer.js"></script>
+	<script src="js/myLogic.js"></script> -->
+	<link href="http://fonts.googleapis.com/css?family=Bree+Serif"
+	rel="stylesheet" type="text/css">
+        <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
 
-		      <!-- Bootstrap -->
-		          <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
 
-			      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-			          <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-				      <!--[if lt IE 9]>
-				            <script
-					    src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-					          <script
-						  src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-						      <![endif]-->
-						        </head>
-							  <body>
-							      <h1>hammer.js_tutorial</h1>
 
-							          <!-- jQuery (necessary for Bootstrap's
-								       JavaScript plugins) -->
-								           <script
-									   src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-									       <!-- Include all compiled plugins
-										    (below), or include individual
-										    files as needed -->
-										        <script
-											src="js/bootstrap.min.js"></script>
-											  </body>
-											  </html>
+        <script src="js/vendor/modernizr-2.7.1.min.js"></script>
+    </head>
+    <body>
+	<div class="welcome">
+		<p>Hammer.js<br>
+		Drage and Drop the pictures, zoom with the pinch and rotate
+		them.</p>
+	</div>
+	<div id="zoomwrapper">
+		<div id="zoom" class="zoomProps">
+			<div class="polaroid">
+				<img src="img/pic1.jpg" alt="" width="200"
+				height="200">
+				<span>Coco</span>
+			</div>
+		</div>
+		<div id="zoom2" class="zoomProps">
+			<div class="polaroid">
+				<img src="img/pic2.jpg" alt="" width="200" height="200">
+				<span>Axo</span>
+			</div>
+		</div>
+		<div id="zoom3" class="zoomProps">
+			<div class="polaroid">
+				<img src="img/pic3.jpg" alt="" width="200" height="200">
+				<span>Gwo</span>
+			</div>
+		</div>
+	</div>
+
+       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script> 
+        <script src="js/hammer.js"></script>
+	<script src="js/jquery.hammer.js"></script>
+	<script src="js/myLogic.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
+</html>
